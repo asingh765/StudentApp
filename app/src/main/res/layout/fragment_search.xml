@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:background="#fff"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:theme="@style/AppTheme.AppBarOverlay">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          app:title="Books Library"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="#8BC34A"
+          app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+
+   <ListView
+       android:id="@android:id/list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+
+      <com.ldoublem.loadingviewlib.view.LVBlock
+          android:id="@+id/animation"
+          android:layout_gravity="center"
+          android:layout_centerInParent="true"
+          android:layout_width="100dp"
+          android:layout_height="100dp" />
+
+   </LinearLayout>
+
+   <com.getbase.floatingactionbutton.FloatingActionsMenu
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/FAM"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       app:fab_addButtonColorNormal="@color/black"
+       app:fab_addButtonColorPressed="#1F000000"
+       app:fab_addButtonPlusIconColor="@color/whiteTextColor"
+       app:fab_labelStyle="@style/customfab">
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catAll"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/show_all_logo"
+          app:fab_size="mini"
+          app:fab_title="All Books" />
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catBusiness"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/business_logo"
+          app:fab_size="mini"
+          app:fab_title="Business" />
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catHistory"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/history_logo"
+          app:fab_size="mini"
+          app:fab_title="History" />
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catHandF"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/health_and_fitness_logo"
+          app:fab_size="mini"
+          app:fab_title="Health And Fitness" />
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catSports"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/fitness_logo"
+          app:fab_size="mini"
+          app:fab_title="Sports" />
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+          android:id="@+id/catRomance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_colorNormal="@color/whiteTextColor"
+          app:fab_colorPressed="@color/whiteTextColor"
+          app:fab_icon="@drawable/romance_logo"
+          app:fab_size="mini"
+          app:fab_title="Romance" />
+
+   </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
